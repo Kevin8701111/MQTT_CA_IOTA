@@ -84,3 +84,22 @@ sudo nano clientca.sh #改ClientIP
 sh clientca.sh # 有錯誤沒差 , 確認生成 client.crt  client.csr  client.key
 mosquitto_sub -h 192.168.0.119 -p 8883 -t "kk/123" --cafile ca.crt --cert client.crt --key client.key
 ```
+
+## ubuntu16.04
+### openssl1.1.1
+- openssl-1.1.1.tar.gz # git clone
+```bash=
+tar -zxf openssl-1.1.1.tar.gz
+cd openssl-1.1.1.tar.gz
+./config
+make install
+mv 'which openssl' /tmp
+ln -s /usr/local/bin/openssl /usr/bin/openssl
+cd /usr/local/src
+cp libssl.so.1.1 /lib/x86_64-linux-gnu
+cp libcrypto.so.1.1 /lib/x86_64-linux-gnu
+openssl version
+
+export LD_LIBRARY_PATH=/usr/local/lib/ #寫在.bashrc
+
+```
