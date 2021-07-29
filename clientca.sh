@@ -1,7 +1,7 @@
 #!/bin/bash
 
-IP="client_IP"
-SUBJECT_CLIENT="/C=SE/ST=Stockholm/L=Stockholm/O=himinds/OU=Client/CN=$IP"
+IP="192.168.0.117"
+SUBJECT_CLIENT="/C=TW/ST=NCHU.TWISC/L=Taichung/O=2111/OU=Client/CN=$IP"
 
 function generate_client{
    echo "$SUBJECT_CLIENT"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-IP="ca_IP"
-SUBJECT_CA="/C=SE/ST=Stockholm/L=Stockholm/O=himinds/OU=CA/CN=$IP"
+IP="192.168.0.119"
+SUBJECT_CA="/C=TW/ST=NCHU.TWISC/L=Taichung/O=2111/OU=CA/CN=$IP"
 
 function generate_CA{
    echo "$SUBJECT_CA"

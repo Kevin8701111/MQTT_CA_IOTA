@@ -1,6 +1,6 @@
 #!/bin/bash
-IP="server_IP"
-SUBJECT_SERVER="/C=SE/ST=Stockholm/L=Stockholm/O=himinds/OU=Server/CN=$IP"
+IP="192.168.0.119"
+SUBJECT_SERVER="/C=TW/ST=NCHU.TWISC/L=Taichung/O=2111/OU=Server/CN=$IP"
 
 function generate_server{
    echo "$SUBJECT_SERVER"
