@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IP="140.120.55.86"
+IP="CAServer IP"
 SUBJECT_CA="/C=TW/ST=NCHU.TWISC/L=Taichung/O=2111/OU=CA/CN=$IP"
 
 function generate_CA{
