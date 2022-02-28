@@ -64,6 +64,20 @@ keyfile /etc/mosquitto/certs/server.key
 require_certificate true
 use_identity_as_username true
 
+##other
+listener 8883
+protocol mqtt
+log_type all
+connection_messages true
+log_timestamp true
+tls_version tlsv1.3
+#ciphers_tls1.3 TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384
+cafile /etc/mosquitto/certs/ca.crt
+certfile /etc/mosquitto/certs/server.crt
+keyfile /etc/mosquitto/certs/server.key
+require_certificate true
+use_identity_as_username true
+
 """
 #待Client開啟sub
 cd 到剛剛跑sh的目錄(不可以是/etc/mosquitto/certs/裡面的)
