@@ -1,7 +1,7 @@
 #!/bin/bash
 
-IP="CAServer IP"
-SUBJECT_CA="/C=TW/ST=NCHU.TWISC/L=Taichung/O=2111/OU=CA/CN=$IP"
+Name="pcname"
+SUBJECT_CA="/C=TW/ST=Taiwan/L=Taichung/O=NCHU/OU=2111/CN=$pcname"
 
 function generate_CA{
    echo "$SUBJECT_CA"
