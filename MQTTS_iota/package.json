@@ -1,0 +1,15 @@
+{
+  "name": "mqtts_iota",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kevin8701111",
+  "license": "ISC",
+  "dependencies": {
+    "@iota/client": "^2.2.3",
+    "request": "^2.88.2"
+  }
+}
