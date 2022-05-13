@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@iota/client": "^2.2.3",
+    "pm2": "^5.2.0",
     "request": "^2.88.2",
     "serialport": "^10.4.0"
   }

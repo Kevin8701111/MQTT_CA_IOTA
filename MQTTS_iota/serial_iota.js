@@ -68,7 +68,7 @@ setInterval(() => {
 async function run(data) {
     const { ClientBuilder } = require('@iota/client')
     const client = new ClientBuilder()
-        .node('http:/127.0.0.1:14265')
+        .node('http:/140.120.55.86:14265')
         .build()
         // https:/domaim/IOTA_api_14265/
         // .node('https://api.lb-0.h.chrysalis-devnet.iota.cafe')
