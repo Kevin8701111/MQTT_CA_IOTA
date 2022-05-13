@@ -32,7 +32,7 @@ function connect() {
         console.log('port open')
         parser.on('data',(arduinoData) => {
             const dateNew = new Date();
-            const dateSplit = new Date();
+            const dateSplit = new Date(+new Date() + 8 * 3600 * 1000);
             let dataJson = JSON.parse(arduinoData);
             dataJson['iso_time'] = getDateISO(dateNew);
             dateString2v = getDateString(dateSplit);
