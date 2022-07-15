@@ -50,7 +50,7 @@ request({url:sunVeillance,json: true},(error,response,body) =>{
     delete data_json[0].County
     data_json[0]['datetime'] = datetime;
     console.log(data_json)
-    run(JSON.stringify(data_json))
+    // run(JSON.stringify(data_json))
 })
 
 async function run(data) {
