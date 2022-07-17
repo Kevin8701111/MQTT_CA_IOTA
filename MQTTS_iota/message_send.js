@@ -11,8 +11,8 @@ async function messages_send() {
         // .build()
     // client.getInfo().then(console.log).catch(console.error)
     const message = await client.message()
-            .index('DEMO11-kevin-Green-energy')
-            .data('{"testk": "testvk","timek": "k1timev"}')
+            .index('DEMO12-kevin-Green-energy')
+            .data('{"testk": "testvk"}')
             .submit();
     end_time = new Date().getTime();
     console.log(message);
